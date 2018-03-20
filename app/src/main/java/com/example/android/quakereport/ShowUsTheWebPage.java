@@ -28,7 +28,7 @@ public class ShowUsTheWebPage extends AppCompatActivity {
         webview.getSettings().setJavaScriptEnabled(true);
         webview.setWebViewClient(new MyLitleBrowser());
     }
-
+//This is custom browser which enables web browsing rather than the traditional one inside webview
     public class MyLitleBrowser extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
