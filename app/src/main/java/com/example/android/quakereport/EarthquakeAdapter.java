@@ -140,7 +140,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake>{
         String finalMag = desiredMag.format(magnitude);
         return finalMag;
     }
-
+//this sets the color of the background of magnitude display
     public int magColorid(double magnitude){
         int id;
         int magInDouble = (int) Math.floor(magnitude) ;
