@@ -1,5 +1,6 @@
 package com.example.android.quakereport;
 
+import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -25,7 +26,7 @@ import java.util.List;
  * Created by TenTsering on 3/11/18.
  */
 public final class QueryUtils {
-    public static final String LOG_TAG = EarthquakeActivity.class.getName();
+    public static final String LOG_TAG = QueryUtils.class.getName();
 
     /**
      * @return a list of {@link Earthquake} objects that has been built up from parsing a JSON response.

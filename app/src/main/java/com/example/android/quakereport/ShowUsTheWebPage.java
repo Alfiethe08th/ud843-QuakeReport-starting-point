@@ -25,10 +25,13 @@ public class ShowUsTheWebPage extends AppCompatActivity {
         String thatCode = intent.getStringExtra(EarthquakeActivity.EXTRA_MESSAGE);
         WebView webview = (WebView) findViewById(R.id.theWeb);
         webview.loadUrl(thatCode);
-        webview.getSettings().setJavaScriptEnabled(true);
         webview.setWebViewClient(new MyLitleBrowser());
+        webview.getSettings().setJavaScriptEnabled(true);
     }
-//This is custom browser which enables web browsing rather than the traditional one inside webview
+
+//This is a custom browser which make the layout acts like an browser itself
+// rather than just displaying content inside the layout, its more sensitive and user friendly.
+
     public class MyLitleBrowser extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {

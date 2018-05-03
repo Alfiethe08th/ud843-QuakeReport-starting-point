@@ -1,5 +1,7 @@
 package com.example.android.quakereport;
 
+import android.net.Uri;
+
 /**
  * Created by TenSherab on 3/10/18.
  */
@@ -20,7 +22,6 @@ public class Earthquake {
     private int mImageResourceId;
 
     /**
-    *create a new ThreeColumns object
     * @param mMag is the magnitude of the Earthquake
     * @param mLocation is the location for the Earthquake
      * @param mTime is the time in milliseond for the Earthquake
